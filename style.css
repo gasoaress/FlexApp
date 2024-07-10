@@ -1,0 +1,139 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+} */
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+section {
+    background-color: #f5fffa;
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#content {
+    width: 30%;
+    height: 600px;
+    background:#e0e0e0;
+    border: 0;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#content h1 {
+    color: #f44336;
+    font-size: 54px;
+    margin-bottom: 6px;
+    margin-top: 6px;
+    text-align: center;
+}
+
+#content p {
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size: 100%;
+    margin-bottom: 16px;
+    text-align: center;
+    }
+    
+#content img{ 
+    width: 80%;
+    height: 30%;
+}
+#content h2 {
+        font-size: 150%;
+        margin-bottom: 6px;
+        margin-top: 8px;
+        text-align: center;
+}
+
+#inputs{
+    display: flex;
+    flex-direction: row;
+    width: 80%;
+    margin-top: 10px;
+    gap: 10px;
+}
+
+input[type="number"] {
+    flex: 1;
+    height: 50px;
+    width: 50%;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    background-color: #f8f8f8;
+    font-size: 90%;
+    outline: none;
+    text-align: center;
+}
+
+[type="number"]:focus{
+    border-color: #66afe9;
+    box-shadow: 0 0 8px #66afe999;
+}
+
+.behindButtons{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-top: 10px;
+}
+
+.behindButtons button{
+    cursor: pointer;
+    padding: 10px;
+    border: 0;
+    border-radius: 8px;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: rgb(255, 255, 255);
+    transition: 0.8s;
+}
+
+
+button[type="submit"] {
+    background-color: #4CAF50; 
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+
+button[type="reset"] {
+    background-color: #f44336;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Adicionar um efeito de hover para ambos os botões */
+button[type="submit"]:hover{
+    background-color: #49944b;
+}
+
+button[type="reset"]:hover {
+    background-color: #c62c21;
+}
+
