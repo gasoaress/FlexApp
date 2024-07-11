@@ -51,11 +51,18 @@ section {
     margin-bottom: 16px;
     text-align: center;
     }
-    
-#content img{ 
+
+#status {
     width: 80%;
     height: 30%;
+    transition: opacity 0.5s ease-in-out;
+    opacity: 1;
 }
+
+#status.transition {
+    opacity: 0;
+}
+
 #content h2 {
         font-size: 150%;
         margin-bottom: 6px;
